@@ -45,6 +45,7 @@ class App < Sinatra::Base
       @operation = *
     else
       @operation = /
-    
+    end
+
   end
 end
