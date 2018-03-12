@@ -38,7 +38,7 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     if @operation == "add"
-      @operation = "+"
+      @operation = +
     elsif @operation == "subtract"
       @operation = "-"
     elsif @operation == "multiply"
@@ -47,7 +47,7 @@ class App < Sinatra::Base
       @operation = "/"
     end
     binding.pry
-    @total = @number1 + @operation + @number2
+    @total = @number1@operation@number2
     "#{@total}"
   end
 end
