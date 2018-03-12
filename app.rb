@@ -21,7 +21,6 @@ class App < Sinatra::Base
     @number.times do
       "#{@phrase}"
     end
-    @say_phrase.to_s
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
