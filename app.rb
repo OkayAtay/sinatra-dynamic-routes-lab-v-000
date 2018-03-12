@@ -46,6 +46,7 @@ class App < Sinatra::Base
     else
       @operation = "/"
     end
+    binding.pry
     @total = @number1 + @operation + @number2
     "#{@total}"
   end
