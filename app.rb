@@ -47,5 +47,6 @@ class App < Sinatra::Base
       @operation = /
     end
     @total = @number1@operation@number2
+    "#{@total}"
   end
 end
