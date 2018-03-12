@@ -46,7 +46,7 @@ class App < Sinatra::Base
     else
       @operation = "/"
     end
-    @total = @number1.to_i + @operation + @number2.to_i
+    @total = @number1 + @operation + @number2
     "#{@total}"
   end
 end
