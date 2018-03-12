@@ -38,16 +38,14 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i
     @number2 = params[:number2].to_i
     if @operation == "add"
-      @operation = "+"
+      @total = @number1 + @number2
     elsif @operation == "subtract"
-      @operation = "-"
+      @total = @number1 - @number2
     elsif @operation == "multiply"
-      @operation = "*"
+      @total = @number1*@number2
     else
-      @operation = "/"
+      @total = @number1/@number2
     end
-    binding.pry
-    @total = @number1+@operation+@number2
     "#{@total}"
   end
 end
